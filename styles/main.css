@@ -1,0 +1,99 @@
+main{
+    display: flex;
+    background: #F1F1F1;
+    
+}
+main img{
+    width: 50%;
+}
+.register{
+    margin: auto;
+}
+.register h2{
+    text-align: center;
+    color: var(--Primary, #2091F9);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px; /* 142.5% */
+    letter-spacing: 0.2px;
+    margin-bottom: 29px;
+}
+.registerp{
+    color: var(--text, #252B42);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */
+    letter-spacing: 0.2px;
+    width: 71%;
+    margin: 0 auto;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    
+}
+main input{
+    border-radius: 10px;
+    border: 2px solid var(--disabled, #8EC2F2);
+    background: #FFF;
+    height: 54px;
+}
+input[id = "email"]{
+    width: 100%;
+    margin-top: 48px;
+    padding-left: 25px;
+}
+.passwordBox{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 22px;
+    margin-top: 22px;
+}
+input[id = "password"]{
+    width: 100%;
+    padding-left: 25px;
+}
+.checkbox{
+    width: 100%;
+    text-align: center;
+    margin-top: 27px;
+}
+input[id = "check"]{
+    height: auto;
+}
+main form label a{
+    color: var(--Primary, #2091F9);
+    font-weight: bold;
+}
+input[id = "signup"]{
+    width: 309px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    background: var(--Primary, #2091F9);
+    margin-top: 16px;
+    color: var(--Light-text, #FFF);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px; /* 175% */
+    letter-spacing: 0.2px;
+    align-self: center;
+}
+.signhere{
+    margin-top: 30px;
+    text-align: center;
+}
+.signhere a{
+    color: var(--text, #252B42);
+    font-weight: 700;
+}
+
+@media (max-width: 1300px){
+    main img{
+        width: 30%;
+    }
+    .register{
+        margin:  200px auto 200px auto;
+    }
+}
