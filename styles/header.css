@@ -54,6 +54,9 @@ header form input:nth-child(2){
     line-height: 28px;
     letter-spacing: 0.2px;
 }
+.burgerMenu{
+    display: none;
+}
 .burgerMenuLogo{
     display: flex;
     flex-direction: column;
@@ -125,6 +128,9 @@ header form input:nth-child(2){
         display: none;
     }
     .burgerMenuLogo{
+        display: flex;
+    }
+    .burgerMenu{
         display: flex;
     }
 }
