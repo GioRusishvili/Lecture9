@@ -50,7 +50,7 @@ input[id = "email"]{
     column-gap: 22px;
     margin-top: 22px;
 }
-input[id = "password"]{
+input[name = "password"]{
     width: 100%;
     padding-left: 25px;
 }
