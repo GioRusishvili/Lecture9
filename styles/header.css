@@ -93,7 +93,7 @@ header form input:nth-child(2){
     animation: burgerMenuAnimation 1s ease-in-out;
 }
 .burgerNavigation{
-    min-width: 400px;
+    min-width: 300px;
     position: fixed;
     top: 0;
     left: 0px;
