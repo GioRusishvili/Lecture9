@@ -1,6 +1,9 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 .header{
     width: 96%;
     margin: 0 auto;
@@ -13,14 +16,14 @@
     width: 186px;
     height: 58px;
 }
-nav{
+.navi{
     display: flex;
     font-size: 16px;;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: 0.2px;
 }
-nav ul{
+.navi ul{
     display: flex;
     align-items: center;
     column-gap: 41px;
@@ -50,5 +53,78 @@ header form input:nth-child(2){
     font-weight: 700;
     line-height: 28px;
     letter-spacing: 0.2px;
-    
+}
+.burgerMenuLogo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    display: none;
+}
+.burgerLine1{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.burgerLine2{
+    width: 15px;
+    height: 5px;
+    background-color: #2091F9;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+.burgerMenu:hover .burgerNavigation{
+    display: flex;
+}
+.burgerMenu:hover .burgerLine1:nth-child(1){
+    transform: rotate(-45deg) translate(7px, -2px);
+    transition: transform 0.2s ease-in-out;
+}
+.burgerMenu:hover .burgerLine1:nth-child(2){
+    transform: rotate(45deg) translate(-10px, -13px);
+    transition: transform 0.2s ease-in-out;
+}
+.burgerMenu:hover .burgerLine2{
+    display: none;
+}
+.burgerMenu:hover .burgerNavigation{
+    visibility: visible;
+    animation: burgerMenuAnimation 1s ease-in-out;
+}
+.burgerNavigation{
+    min-width: 400px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    height: 100vh;
+    background-color: darkslategray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    row-gap: 20px;
+}
+.burgerNavigation form, .burgerNavigation ul{
+    display: contents;
+}
+.burgerNavigation ul{
+    color: white;
+    font-size: 20px;
+}
+@keyframes burgerMenuAnimation{
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+@media (max-width: 1200px){
+    .navi{
+        display: none;
+    }
+    .burgerMenuLogo{
+        display: flex;
+    }
 }

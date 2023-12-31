@@ -97,3 +97,18 @@ input[id = "signup"]{
         margin:  200px auto 200px auto;
     }
 }
+@media (max-width: 1200px){
+    main{
+        flex-direction: column;
+    }
+    main img{
+        width: auto;
+        height: 30%;
+    }
+    main form{
+        row-gap: 20px;
+    }
+    .passwordBox{
+        display: contents;
+    }
+}
